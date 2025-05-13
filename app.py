@@ -23,3 +23,11 @@ if uploaded_file:
     if st.button("Generate PDF Report"):
         report_path = generate_report(extracted_eq, method, result)
         st.success(f"Report generated: {report_path}")
+from numeralab_core.critical_finder import find_critical_points
+
+# ... diğer kodların altına ekle ...
+    if st.button("Find Critical Points (AI Assisted)"):
+        crit_points, crit_fig = find_critical_points(x_vals, y_vals)
+        st.pyplot(crit_fig)
+        st.write("Critical Points Found:")
+        st.write(crit_points)
