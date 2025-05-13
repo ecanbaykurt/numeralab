@@ -6,6 +6,7 @@ from numeralab_core.critical_finder import find_critical_points
 from numeralab_core.ai_summary import generate_scientific_summary
 import numpy as np
 import sympy as sp
+from numeralab_core.image_to_equation_google import extract_equation_from_image_google_api
 
 st.set_page_config(page_title="NumeraLab", layout="wide")
 st.title("📐 NumeraLab: AI-Powered Numerical Assistant")
@@ -15,7 +16,7 @@ method = st.sidebar.selectbox("Select Numerical Method", ["Finite Difference Met
 
 if uploaded_file:
     st.info("Extracting equation from image...")
-    extracted_eq = extract_equation_from_image(uploaded_file)
+    extracted_eq = extract_equation_from_image_google_api(uploaded_file)
     st.write("Detected Equation:")
     st.latex(extracted_eq)
 
