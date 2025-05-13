@@ -1,0 +1,9 @@
+streamlit
+numpy
+matplotlib
+sympy
+pytesseract
+Pillow
+fpdf
+opencv-python
+scikit-image
