@@ -1,0 +1,8 @@
+streamlit
+opencv-python
+scipy
+numpy
+matplotlib
+git add requirements.txt
+git commit -m "Add requirements"
+git push
