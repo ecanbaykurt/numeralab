@@ -1,8 +1,5 @@
 streamlit
-opencv-python
-scipy
+opencv-python-headless
 numpy
+scipy
 matplotlib
-git add requirements.txt
-git commit -m "Add requirements"
-git push
