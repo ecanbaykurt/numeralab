@@ -1,4 +1,6 @@
-cd numeralab-app
+import streamlit as st
+
+st.title("NumeraLab: Sayısal Analiz Asistanı")
 git init
 git add .
 git commit -m "Initial commit"
