@@ -31,3 +31,12 @@ from numeralab_core.critical_finder import find_critical_points
         st.pyplot(crit_fig)
         st.write("Critical Points Found:")
         st.write(crit_points)
+
+from numeralab_core.ai_summary import generate_scientific_summary
+
+# ... diğer kodların altına ekle ...
+        if st.button("Generate AI Scientific Summary"):
+            ai_summary = generate_scientific_summary(extracted_eq, method, crit_points)
+            st.write("AI Scientific Summary:")
+            st.info(ai_summary)
+
