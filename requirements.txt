@@ -7,3 +7,4 @@ Pillow
 fpdf
 opencv-python
 scikit-image
+openai
